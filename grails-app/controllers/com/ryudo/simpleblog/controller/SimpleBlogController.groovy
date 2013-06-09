@@ -1,6 +1,6 @@
 package com.ryudo.simpleblog.controller
 
-class HomeController {
+class SimpleBlogController {
 
     def index() { }
 }
