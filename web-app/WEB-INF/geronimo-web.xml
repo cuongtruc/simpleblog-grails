@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://geronimo.apache.org/xml/ns/j2ee/web-2.0.1"
+	xmlns:sys="http://geronimo.apache.org/xml/ns/deployment-1.2"
+	xmlns:name="http://geronimo.apache.org/xml/ns/naming-1.2">
+	<sys:environment>
+		<sys:moduleId>
+			<sys:groupId>com.ryudo</sys:groupId>
+			<sys:artifactId>SimpleBlog</sys:artifactId>
+			<sys:version>0.1</sys:version>
+			<sys:type>war</sys:type>
+		</sys:moduleId>
+		<sys:dependencies>
+			<sys:dependency>
+				<sys:groupId>console.dbpool</sys:groupId>
+				<sys:artifactId>jdbc_SimpleBlogDS</sys:artifactId>
+			</sys:dependency>
+		</sys:dependencies>
+	</sys:environment>
+	<context-root>/SimpleBlog</context-root>
+	<!-- security settings, if any, go here -->
+	<name:resource-ref>
+		<name:ref-name>jdbc/MyDataSource</name:ref-name>
+		<name:resource-link>jdbc/SimpleBlogDS</name:resource-link>
+	</name:resource-ref>
+</web-app>
