@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><g:layoutTitle default="Grails" /></title>
+<title><g:layoutTitle default="SimpleBlog™" /></title>
 <r:require modules="jquery, bootstrap, FlatUI" /> 
 <g:layoutHead />
 <r:layoutResources />

@@ -18,6 +18,11 @@ modules = {
 		resource url : 'http://vjs.zencdn.net/c/video.js'
 		resource url : 'js/application.js'
 		resource url : [dir:'js',file: 'icon-font-ie7.js'], wrapper: { s -> "<!--[if lt IE 8]>$s<![endif]-->"}
-		resource url : [dir:'js',file: 'icon-font-ie7-24.js'], wrapper: { s -> "<!--[if lt IE 8]>$s<![endif]-->"}
+	}
+	
+	SimpleBlog {
+		dependsOn 'jquery'
+		resource url : 'css/simpleblog.css'
+		resource url : 'js/simpleblog.js'
 	}
 }
