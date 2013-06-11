@@ -11,5 +11,4 @@
 		</sys:moduleId>
 	</sys:environment>
 	<context-root>/SimpleBlog</context-root>
-	<!-- security settings, if any, go here -->
 </web-app>
